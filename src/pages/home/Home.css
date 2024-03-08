@@ -1,0 +1,25 @@
+/* Home.css */
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .welcome-heading {
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+  
+  .dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Use an appropriate weight value */
+    font-style: normal;
+  }
+  
+  .no-books-message {
+    color: #ff0000; /* Red color for emphasis */
+  }
+  

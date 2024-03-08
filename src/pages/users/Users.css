@@ -1,0 +1,49 @@
+/* Users.css */
+
+.users-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.users-heading {
+  text-align: center;
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.no-users-message {
+  color: #ff0000;
+}
+
+/* Add styles for the buttons */
+button {
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Specific style for the Delete User button */
+.delete-user-button {
+  background-color: #f44336; /* Red background color for delete button */
+}
+
+.delete-user-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}

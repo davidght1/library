@@ -1,0 +1,78 @@
+/* Book.css */
+
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-info {
+    padding: 16px;
+  }
+  
+  .book-title {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #feb508; /* A deep blue color for the title */
+  }
+  
+  .book-details {
+    color: #555;
+  }
+  
+  .borrowed-status {
+    color: #3ffe05; /* A slightly brighter red for borrowed books */
+  }
+
+  /* Book.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.book-card {
+  font-family: 'Bebas Neue', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+  padding: 16px;
+}
+
+.book-title {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #feb508; /* A deep blue color for the title */
+}
+
+.book-details {
+  color: #555;
+}
+
+.borrowed-status {
+  color: #3ffe05; /* A slightly brighter red for borrowed books */
+}
+
+  

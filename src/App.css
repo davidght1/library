@@ -1,0 +1,9 @@
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #161b22;
+}
+
+body {
+  color: white;
+}
