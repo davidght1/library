@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h2 className="welcome-heading dancing-script-font">Welcome To Tom & David Library</h2>
+      <h2 className="welcome-heading dancing-script-font">Welcome To David && Tom Library</h2>
       {books.length > 0 ? (
         <BooksList books={availableBooks} />
       ) : (
