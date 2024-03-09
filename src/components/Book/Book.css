@@ -37,8 +37,6 @@
 
   /* Book.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 .book-card {
   font-family: 'Bebas Neue', sans-serif;
   border: 1px solid #ccc;
@@ -74,5 +72,3 @@
 .borrowed-status {
   color: #3ffe05; /* A slightly brighter red for borrowed books */
 }
-
-  
