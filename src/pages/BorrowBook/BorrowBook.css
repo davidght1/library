@@ -1,0 +1,57 @@
+.borrow-book-container {
+    max-width: 400px;
+    margin: 300px auto; /* Updated margin for positioning */
+    padding: 20px;
+    background-color: #bc8d65;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(59, 37, 37, 0.1);
+    text-align: center; /* Center the content */
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff; /* Title color */
+}
+
+.book-id {
+    margin-bottom: 10px;
+    color: #fff; /* Book ID color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff; /* Label color */
+}
+
+input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #4caf50; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Button hover color */
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

@@ -1,12 +1,10 @@
-// Home.jsx
-
-import React, { useState } from 'react';
-import dataBooks from '../../../dataBooks.js';
+import React, { useContext } from 'react';
 import BooksList from '../../components/BooksList/BooksList.jsx';
+import { useBooksContext } from '../../Context/BooksContext.jsx'; // Corrected import
 import './Home.css'; // Import the CSS file
 
 const Home = () => {
-  const [books, setBooks] = useState(dataBooks);
+  const { books } = useBooksContext(); // Use useBooksContext to access the context
 
   const availableBooks = books.filter((book) => !book.isBorrowed);
 

@@ -7,6 +7,7 @@ export const UserProvider = ({ children }) => {
 
     useEffect(()=>{
         setUsers(dataUsers)
+        
     },[])
     // add user
     const addUser = (newUser)=>{
@@ -20,10 +21,24 @@ export const UserProvider = ({ children }) => {
     const deleteUserById = (userId) => {
         setUsers((prevUsers) => prevUsers.filter((user) => user.id !== userId));
       };
+
+     // Borrow a book
+     const borrowBookUser = (userId, bookId) => {
+        setUsers((prevUsers) =>
+            prevUsers.map((user) =>
+                user.id === userId
+                    ? {
+                        ...user,
+                        borrowed: { ...user.borrowed, [bookId]: true }
+                    }
+                    : user
+            )
+        );
+    };
       
 
     return(
-        <UserContext.Provider value={{users,addUser,isUserIdExists,deleteUserById}}>
+        <UserContext.Provider value={{users,addUser,isUserIdExists,deleteUserById,borrowBookUser}}>
             {children}
         </UserContext.Provider>
     )

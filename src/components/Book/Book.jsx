@@ -1,7 +1,6 @@
-// Book.jsx
-
 import React from 'react';
 import './Book.css';
+import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
   return (
@@ -13,6 +12,9 @@ const Book = ({ book }) => {
         <p>Description: {book.description}</p>
         <p>Borrowed Status: <span className="borrowed-status">{book.isBorrowed ? 'Borrowed' : 'Available'}</span></p>
       </div>
+      <Link to={`/borrowedbook/${book.id}`} style={{ textDecoration: 'none' }}>
+        <button className="book-button">Borrow This Book</button>
+      </Link>
     </div>
   );
 };
