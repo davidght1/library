@@ -18,9 +18,17 @@ export const BooksProvider = ({children}) =>{
         book.id === bookId ? {...book, isBorrowed: true}: book))
     }
 
+    //remove book
+    const removeBook = (bookId) => {
+        setBooks((prevBooks) =>
+            prevBooks.filter((book) => book.id !== bookId)
+        );
+    };
+
+    
 
     return(
-        <BooksContext.Provider value={{books,borrowBook}}>
+        <BooksContext.Provider value={{books,borrowBook,removeBook,setBooks}}>
             {children}
         </BooksContext.Provider>
     )

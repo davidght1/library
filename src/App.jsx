@@ -8,6 +8,7 @@ import { UserProvider } from "./Context/UsersContext";
 import DeleteUser from './pages/DeleteUser/DeleteUser'
 import BorrowBook from './pages/BorrowBook/BorrowBook'
 import { BooksProvider } from './Context/BooksContext'
+import AddBook from './pages/AddBook/AddBook'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/add-user" element={<AddUser/>} />
           <Route path='/deleteuser' element={<DeleteUser/>} />
           <Route path='/borrowedbook/:id' element={<BorrowBook/>}/>
+          <Route path='/addbook' element={<AddBook/>}/>
         </Routes>
       </div>
       </BrowserRouter>

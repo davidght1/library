@@ -1,11 +1,12 @@
 /* Book.css */
 
+/* Book card container */
 .book-card {
   font-family: 'Bebas Neue', sans-serif;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
-  position: relative; /* Position relative for absolute positioning */
+  position: relative;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -16,6 +17,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Book details */
 .book-info {
   padding: 16px;
 }
@@ -52,4 +54,15 @@
   margin-bottom: 20px; /* Add some space at the bottom */
   cursor: pointer;
   border-radius: 5px;
+}
+
+/* Trash icon */
+.trash-icon {
+  position: absolute;
+  top: 40px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; /* Ensure the icon is above other elements */
 }
